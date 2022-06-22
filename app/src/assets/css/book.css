@@ -1,0 +1,102 @@
+/* book */
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+
+/* Service */
+input[type=text],
+input[type=number],
+input[type=datetime-local],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(241, 194, 26);
+    width: 100%;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(221, 178, 23);
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.column img {
+    width: 85%;
+    height: 60rem;
+    padding: 0%;
+}
+
+input[type=text], 
+input[type=number], 
+input[type=datetime-local], 
+textarea[id=note] {
+    border-color: rgb(241, 194, 26);
+}
+input[type=text],
+input[type=number],
+input[type=datetime-local],
+textarea[id=note]:hover {
+    border: 0.1rem solid rgb(241, 194, 26);
+}
+
+input[type=text],
+input[type=number],
+input[type=datetime-local],
+textarea[id=note] :active {
+    border: 0.1rem solid rgb(241, 194, 26);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    button {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .column img {
+        margin-top: 5.2rem;
+        width: 100%;
+        height: 40rem;
+    }
+}
